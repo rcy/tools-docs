@@ -6,7 +6,7 @@ description: How to install the GraphQL Server
 
 GraphQL server is a flexible, community driven, production-ready HTTP GraphQL server plugin for Node.js.
 
-It works with any GraphQL schema built with GraphQL.js, Facebook's reference JavaScript execution library, and you can use GraphQL Server with all popular JavaScript HTTP servers, including Express, Connect, Hapi, and Koa.
+It works with any GraphQL schema built with GraphQL.js, Facebook's reference JavaScript execution library, and you can use GraphQL Server with all popular JavaScript HTTP servers, including Express, Connect, Hapi, Koa, Restify, and Lambda.
 
 This server can be queried from any popular GraphQL client, such as [Apollo](https://dev.apollodata.com) or [Relay](https://facebook.github.io/relay) because it supports all of the common semantics for sending GraphQL over HTTP, as [documented on graphql.org](http://graphql.org/learn/serving-over-http/). GraphQL Server also supports some small extensions to the protocol, such as sending multiple GraphQL operations in one request. Read more on the [sending requests](/tools/graphql-server/requests.html) page.
 
@@ -17,6 +17,8 @@ Install it with:
 npm install graphql graphql-server-express  # for Express or Connect
 npm install graphql graphql-server-hapi
 npm install graphql graphql-server-koa
+npm install graphql graphql-server-restify
+npm install graphql graphql-server-lambda
 ```
 
 The following features distinguish GraphQL Server from [express-graphql](https://github.com/graphql/express-graphql), Facebook's reference HTTP server implementation:
