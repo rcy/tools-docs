@@ -91,6 +91,72 @@ Since the mock functions on fields are actually just GraphQL resolvers, you can 
 
 You can read some background and flavor on this approach in our blog post, ["Mocking your server with one line of code"](https://medium.com/apollo-stack/mocking-your-server-with-just-one-line-of-code-692feda6e9cd).
 
+## Mocking interfaces
+
+Interface mock functions must return an object with a `typename`  property:
+
+```js
+import {
+  makeExecutableSchema,
+  addMockFunctionsToSchema
+} from 'graphql-tools'
+
+const typeDefs = `
+type Query {
+  fetchMore(listType: String!, amount: Int!, offset: Int!): List
+}
+
+type Distributor {
+  id: Int
+  name: String
+}
+
+type Product {
+  id: Int
+  name: String
+}
+
+interface List {
+  amount: Int
+  offset: Int
+  total: Int
+  remaining: Int
+}
+
+type DistributorList implements List {
+  amount: Int
+  offset: Int
+  total: Int
+  remaining: Int
+  items: [Distributor]
+}
+
+type ProductList implements List {
+  amount: Int
+  offset: Int
+  total: Int
+  remaining: Int
+  items: [Product]
+}
+`
+
+const mocks = {
+  List: () => ({
+    typename: (Math.random() > .5) ? `DistributorList`: `ProductList`,
+  })
+}
+
+const schema = makeExecutableSchema({
+  typeDefs
+})
+
+addMockFunctionsToSchema({
+    schema,
+    mocks,
+})
+
+```
+
 ## API
 
 ### addMockFunctionsToSchema
