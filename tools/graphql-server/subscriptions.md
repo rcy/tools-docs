@@ -271,7 +271,7 @@ const subscriptionsServer = new SubscriptionServer(
 
 You can use `SubscriptionServer` lifecycle hooks to create an authenticated transport, by using `onConnect` to validate the connection.
 
-`SubscriptionsClient` support `connectionParams` that will be sent over the first WebSocket message, and delay every GraphQL subscription until done.
+`SubscriptionsClient` support `connectionParams` ([example available here](/react/subscriptions.html#authentication)) that will be sent over the first WebSocket message, and delay every GraphQL subscription until done.
 
 You can use those connection parameters with `onConnect` callback, and handle the user authentication, and even extend the GraphQL context with the current user object.
 
