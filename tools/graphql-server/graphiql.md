@@ -1,6 +1,6 @@
 ---
 title: GraphiQL
-order: 204
+order: 205
 description: How to set up GraphiQL with GraphQL Server
 ---
 

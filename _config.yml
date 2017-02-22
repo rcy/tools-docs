@@ -26,6 +26,7 @@ sidebar_categories:
     - graphql-server/index
     - graphql-server/setup
     - graphql-server/requests
+    - graphql-server/subscriptions
     - graphql-server/graphiql
     - graphql-server/migration-graphql-server
     - graphql-server/migration-hapi
