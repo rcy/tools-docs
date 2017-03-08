@@ -30,6 +30,15 @@ sidebar_categories:
     - graphql-server/migration-graphql-server
     - graphql-server/migration-hapi
     - graphql-server/migration
+  Subscriptions:
+    - graphql-subscriptions/index
+    - graphql-subscriptions/subscriptions-to-schema
+    - graphql-subscriptions/setup
+    - graphql-subscriptions/lifecycle-events
+    - graphql-subscriptions/authentication
+    - graphql-subscriptions/express
+    - graphql-subscriptions/external-pubsub
+    - graphql-subscriptions/meteor
 github_repo: apollostack/tools-docs
 content_root: tools
 

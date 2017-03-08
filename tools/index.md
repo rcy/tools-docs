@@ -19,7 +19,9 @@ These are libraries designed to make it easy to build a JavaScript GraphQL serve
 The Apollo community is excited about enabling people to add realtime functionality to their applications, and GraphQL subscriptions are the first step on that path. You can use the packages below to add subscription support to any Node.js GraphQL server.
 
 - [graphql-subscriptions](https://github.com/apollostack/graphql-subscriptions), a transport-agnostic JavaScript utility that helps you execute GraphQL subscriptions and attach them to event sources.
-- [subscriptions-transport-ws](https://github.com/apollostack/subscriptions-transport-ws), a websocket server and client for GraphQL subscriptions that works with `graphql-subscriptions` and can be easily used directly in a JavaScript app or wired up to a fully-featured GraphQL client like Apollo or Relay.
+- [subscriptions-transport-ws](https://github.com/apollostack/subscriptions-transport-ws), a WebSocket server and client for GraphQL subscriptions that works with `graphql-subscriptions` and can be easily used directly in a JavaScript app or wired up to a fully-featured GraphQL client like Apollo or Relay.
+
+You can red more about subscription server [here](/tools/graphql-server/subscriptions).
 
 ## GraphQL client tools
 
