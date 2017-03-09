@@ -8,7 +8,7 @@ GraphQL server is a flexible, community driven, production-ready HTTP GraphQL se
 
 It works with any GraphQL schema built with GraphQL.js, Facebook's reference JavaScript execution library, and you can use GraphQL Server with all popular JavaScript HTTP servers, including Express, Connect, Hapi, and Koa.
 
-This server can be queried from any popular GraphQL client, such as [Apollo](https://dev.apollodata.com) or [Relay](https://facebook.github.io/relay) because it supports all of the common semantics for sending GraphQL over HTTP, as [documented on graphql.org](http://graphql.org/learn/serving-over-http/). GraphQL Server also supports some small extensions to the protocol, such as sending multiple GraphQL operations in one request. Read more on the [sending requests](/tools/graphql-server/requests.html) page.
+This server can be queried from any popular GraphQL client, such as [Apollo](http://dev.apollodata.com) or [Relay](https://facebook.github.io/relay) because it supports all of the common semantics for sending GraphQL over HTTP, as [documented on graphql.org](http://graphql.org/learn/serving-over-http/). GraphQL Server also supports some small extensions to the protocol, such as sending multiple GraphQL operations in one request. Read more on the [sending requests](/tools/graphql-server/requests.html) page.
 
 Install it with:
 
