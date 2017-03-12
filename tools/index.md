@@ -21,7 +21,7 @@ The Apollo community is excited about enabling people to add realtime functional
 - [graphql-subscriptions](https://github.com/apollostack/graphql-subscriptions), a transport-agnostic JavaScript utility that helps you execute GraphQL subscriptions and attach them to event sources.
 - [subscriptions-transport-ws](https://github.com/apollostack/subscriptions-transport-ws), a WebSocket server and client for GraphQL subscriptions that works with `graphql-subscriptions` and can be easily used directly in a JavaScript app or wired up to a fully-featured GraphQL client like Apollo or Relay.
 
-You can red more about subscription server [here](/tools/graphql-server/subscriptions).
+You can read more about subscription server [here](/tools/graphql-server/subscriptions).
 
 ## GraphQL client tools
 
