@@ -25,13 +25,14 @@ type Author {
 type Post {
   id: Int!
   title: String
-  author: Author
   votes: Int
+  author: Author
 }
 
 # the schema allows the following query:
 type Query {
   posts: [Post]
+  author(id: Int!): Author # author query must receive an id as argument
 }
 
 # this schema allows the following mutation:
@@ -216,7 +217,7 @@ GraphiQL has built-in support for displaying docstrings with markdown syntax. Yo
 type MyObjectType {
   # Description for field
   myField: String!
-  
+
   otherField(
     # Description for argument
     arg: Int
