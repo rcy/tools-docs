@@ -33,7 +33,7 @@ const GraphQLOptions = {
 
   // a boolean option that will trigger additional debug logging if execution errors occur
   debug?: boolean
-})
+}
 ```
 
 <h3 id="options-function">Passing options as a function</h3>
