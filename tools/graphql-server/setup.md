@@ -52,7 +52,7 @@ This is useful if you need to attach objects to your context on a per-request ba
 
 <h2 id="importingESModules">Importing ES6 Modules</h2>
 
-Currently, the ES6 Module import syntax used in these exampels is not implemented in Nodejs 6.x,7.x, and earlier versions.  To use these examples, you will need to configure an external tool like [Babel](https://babeljs.io/) that will transpile the import statements into standard require statements.  For example, ```import express from 'express';``` would become  ```var express = require('express');```.  If you don't want to use an external transpiler, you can manually convert the imports to requires using the example format.     
+Currently, the ES6 Module import syntax used in these exampels is not implemented in Nodejs 6.x,7.x, and earlier versions.  To use these examples, you will need to configure an external tool like [Babel](https://babeljs.io/) that will transpile the import statements into standard require statements.  For example, `import express from 'express';` would become  `var express = require('express');`.  If you don't want to use an external transpiler, you can manually convert the imports to requires using the example format.     
 
 <h2 id="graphqlExpress">Using with Express</h2>
 
