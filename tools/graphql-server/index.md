@@ -19,6 +19,7 @@ npm install graphql graphql-server-hapi
 npm install graphql graphql-server-koa
 npm install graphql graphql-server-restify
 npm install graphql graphql-server-lambda
+npm install graphql graphql-server-micro
 ```
 
 The following features distinguish GraphQL Server from [express-graphql](https://github.com/graphql/express-graphql), Facebook's reference HTTP server implementation:
