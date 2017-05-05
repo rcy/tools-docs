@@ -6,6 +6,9 @@ description: Writing resolvers with graphql-tools
 
 When using `graphql-tools`, you define your field resolvers separately from the schema. Since the schema already describes all of the fields, arguments, and result types, the only thing left is a collection of functions that are called to actually execute these fields.
 
+Keep in mind that GraphQL resolvers can return [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). In fact, most resolvers that do real work - for example fetching data from a database or a REST API - will return a promise. If you’re not familiar with promises, here’s [a brief overview](https://scotch.io/tutorials/javascript-promises-for-dummies).
+
+
 ## Resolver map
 
 In order to respond to queries, a schema needs to have resolve functions for all fields. Resolve functions cannot be included in the GraphQL schema language, so they must be added separately. This collection of functions is called the "resolver map".
